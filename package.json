@@ -1,0 +1,35 @@
+{
+  "name": "base_server",
+  "version": "1.0.0",
+  "description": "基于node的基础服务",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index",
+    "dev": "cross-env NODE_ENV=development pm2 start ecosystem.config.js",
+    "pro": "cross-env NODE_ENV=production pm2 start ecosystem.config.js",
+    "stop": "pm2 stop base",
+    "log": "pm2 log",
+    "delete": "pm2 delete base",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-useragent": "^1.0.15",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "multer": "^1.4.2",
+    "multiparty": "^4.2.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "chalk": "^4.1.0"
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base_server</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .container-inline {
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid #dddddd;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 20px;
+            color: #ffffff;
+            background-color: cornflowerblue;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .title {
+            font-weight: bold;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">一个基础的node服务</div>
+    <div class="container">
+        <label>上传文件功能调试</label>
+        <input type="file" name="file_name" id="file_id">
+    </div>
+    <div class="container container-inline">
+        <div class="title">注册调试</div>
+        <div class="container">
+            <label>姓名：</label>
+            <input type="text" class="register_name" placeholder="请输入姓名，1-20位">
+        </div>
+        <div class="container">
+            <label>电话：</label>
+            <input type="text" class="register_phone" placeholder="请输入电话">
+        </div>
+        <div class="container">
+            <label>密码：</label>
+            <input type="text" class="register_password" placeholder="请输入密码，6-20位">
+        </div>
+        <div class="btn btn_register">提交</div>
+    </div>
+    <div class="container container-inline">
+        <div class="title">登录调试</div>
+        <div class="container">
+            <label>姓名：</label>
+            <input type="text" class="login_name" placeholder="请输入姓名，1-20位">
+        </div>
+        <div class="container">
+            <label>电话：</label>
+            <input type="text" class="login_phone" placeholder="请输入电话">
+        </div>
+        <div class="container">
+            <label>密码：</label>
+            <input type="text" class="login_password" placeholder="请输入密码，6-20位">
+        </div>
+        <div class="btn btn_login">提交</div>
+    </div>
+    <div class="container container-inline">
+        <div class="title">退出登录调试</div>
+        <div class="container">
+            <div class="btn btn_loginOut">提交</div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
