@@ -5,8 +5,8 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
   host: 'localhost',
   port: '3306',
-  user: 'lupeng',
-  password : 'root',
+  user: 'root',
+  password : '123456',
   database : 'fast_mail'
 });
  
