@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    background: url('./imags/bg-3.jpg');
+    position: relative;
+}
+.step1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+.step1 div {
+    margin-bottom: 10px;
+}
+.step1 div b {
+    margin: 0 5px;
+    color: #B32C4A;
+    font-size: 38px;
+    position: relative;
+    transform: rotate(0deg);
+}
+.step1 div .xi {
+    opacity: 0;
+}
+.step1 .count-down {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    background-color: #FCE676;
+    color: #B32C4A;
+}
+.zeng {
+    animation: zeng 1.8s;
+}
+.header {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url('./imags/10.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+@keyframes zeng {
+    0%   {top: -100px;}
+    25%  {top: 200px;}
+    50%  {top: 100px;}
+    75%  {top: 200px;}
+    100% {top: 0px;}
+}
+@keyframes xi {
+    0%   {top: -200px; left: -200px; opacity: 1;}
+    25%  {top: 200px; left: -200px; opacity: 1;}
+    50%  {top: 200px; left: 100px; opacity: 1;}
+    75%  {top: 0px; left: 100px; opacity: 1;}
+    100% {top: 0px; left: 0px; opacity: 1;}
+}
+
+.step2 {
+    display: none;
+    height: 100vh;
+    background: url('./imags/bg-4.jpg') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.step2-pic1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    height: 200px;
+    width: 160px;
+    background: url('./imags/11.jpg') no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(0deg);
+    border-radius: 20px;
+}
+.step2-pic2 {
+    position: absolute;
+    right: 10px;
+    bottom: 108px;
+    height: 200px;
+    width: 200px;
+    background: url('./imags/1.jpg') no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+.zhen {
+    position: absolute;
+    right: -90%;
+    top: 50%;
+    width: 120px;
+    transform: translate(0, -50%);
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: bold;
+}
+.qu {
+    position: absolute;
+    left: -66%;
+    top: 50%;
+    width: 120px;
+    transform: translate(0, -50%);
+    color: #0174CC;
+    font-size: 18px;
+    font-weight: bold;
+}

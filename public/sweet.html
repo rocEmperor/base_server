@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淅儿</title>
+    <link rel="stylesheet" href="./sweet.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="step step1">
+            <div class="header"></div>
+            <div class="name1"><b class="zeng">曾</b>貌玉棱棱</div>
+            <div class="name2">羽衣风淅<b class="xi">淅</b></div>
+            <div class="count-down">5</div>
+        </div>
+        <div class="step step2">
+            <div class="step2-pic1">
+                <div class="zhen">曾经有一份真诚的爱情放在我面前，我没有珍惜，等我失去的时候我才后悔莫及...</div>
+            </div>
+            <div class="step2-pic2">
+                <div class="qu">有一天，会有个大英雄踩着七彩祥云来娶我</div>
+            </div>
+        </div>
+        <audio src="./imags/man.mp3" loop id="audio" autoplay></audio>
+    </div>
+    <script>
+        setTimeout(function () {
+            $('.xi').css({ animation: 'xi 1.8s' })
+            $('.xi').css({ opacity: '1' })
+        }, 1800)
+        let count = 5;
+        setTimeout(function () {
+            let timer = setInterval(function () {
+                count = count - 1;
+                if (count == 0) {
+                    $('.count-down').text('go').css({ lineHeight: '60px' })
+                    $('.step1').css({ display: 'none' })
+                    $('.step2').css({ display: 'block' })
+                    clearInterval(timer)
+                    return false;
+                } 
+                $('.count-down').text(count)
+            }, 1000)
+        }, 3600)
+    </script>
+</body>
+</html>
